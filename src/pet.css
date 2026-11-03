@@ -1,0 +1,38 @@
+* { box-sizing: border-box; user-select: none; -webkit-user-drag: none; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: transparent; }
+body { font-family: "Microsoft YaHei UI", "Segoe UI", sans-serif; color: #efe5d8; }
+button { font: inherit; cursor: pointer; }
+.hidden { display: none !important; }
+#stage { position: relative; width: 304px; height: 360px; }
+.pet { position: absolute; width: 288px; height: 256px; left: 8px; bottom: 0; cursor: grab; touch-action: none; outline: none; transform-origin: 50% 95%; filter: drop-shadow(0 4px 4px #270d2060); }
+.pet canvas { width: 288px; height: 256px; display: block; pointer-events: none; }
+.pet.dragging { cursor: grabbing; }
+.pet.gliding { animation: float 1.65s ease-in-out infinite; }
+.pet.idling { animation: breathe 4.8s ease-in-out infinite; }
+.pet:not(.idling):not(.gliding) { transform: none; }
+.pet:focus-visible { filter: drop-shadow(0 0 4px #d5b47b); }
+.bubble { position: absolute; z-index: 9; top: 3px; left: 6px; width: 292px; padding: 8px 11px 6px; background: linear-gradient(145deg, #fff7edfa, #f0e2d7fa); color: #3b2430; border: 1px solid #bb8b6c; border-radius: 15px 15px 15px 3px; box-shadow: 0 5px 15px #12091135; }
+.bubble::after { content: ""; position: absolute; width: 10px; height: 10px; bottom: -6px; left: 31px; background: #f2e6db; border-right: 1px solid #bb8b6c; border-bottom: 1px solid #bb8b6c; transform: rotate(45deg); }
+.bubble-heading { display: flex; justify-content: space-between; align-items: center; color: #974354; font-size: 9px; line-height: 13px; letter-spacing: 1.5px; margin-bottom: 4px; }
+.bubble-text { font-size: 12px; line-height: 1.55; min-height: 19px; max-height: 58px; overflow-y: auto; overflow-wrap: anywhere; white-space: pre-wrap; scrollbar-width: thin; scrollbar-color: #b88980 transparent; user-select: text; }
+.bubble-foot { display: flex; align-items: center; justify-content: space-between; min-height: 15px; font-size: 9px; color: #9b7c77; margin-top: 4px; }
+.bubble-foot button { border: 0; background: transparent; font-size: 17px; line-height: 14px; color: #8d2b41; padding: 0 2px 1px 9px; }
+.bubble.thinking .bubble-heading::after { content: "· · ·"; animation: pulse 1s ease-in-out infinite alternate; }
+.aura { position: absolute; width: 116px; height: 23px; left: 94px; bottom: 4px; opacity: 0; border: 1px solid #b94a5e66; border-radius: 50%; box-shadow: 0 0 18px #ab34413b, inset 0 0 12px #9734492a; transition: opacity .5s; pointer-events: none; }
+.aura.active { opacity: .85; }
+.mood { position: absolute; right: 23px; bottom: 222px; color: #d6b17c; font-size: 22px; text-shadow: 0 1px 4px #4b1524; pointer-events: none; }
+.effects { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 7; }
+.particle { position: absolute; font: 15px Georgia, serif; color: var(--color, #c85165); animation: drift 1.5s ease-out both; text-shadow: 0 0 5px #da997155; }
+.pet-menu { position: absolute; z-index: 12; bottom: 30px; left: 9px; width: 286px; padding: 13px; border: 1px solid #96715c; border-radius: 16px; background: linear-gradient(145deg, #2b1825f7, #17141bf7); box-shadow: 0 10px 30px #10080c65; backdrop-filter: blur(8px); }
+.menu-title { font-size: 12px; color: #dfbc93; letter-spacing: 3px; margin-bottom: 10px; }
+.action-buttons { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.action-buttons button { min-height: 44px; display: grid; align-content: center; gap: 3px; background: #ffffff05; border: 1px solid #b6886538; color: #e7dacf; border-radius: 8px; padding: 4px; font-size: 10px; }
+.action-buttons button span { color: #d8ad79; font-size: 14px; }
+.action-buttons button:hover { background: #9e344c40; border-color: #ca7a79; }
+.menu-bottom { display: flex; justify-content: space-between; margin-top: 10px; }
+.menu-bottom button { border: 0; background: transparent; color: #bfa59d; font-size: 11px; padding: 4px; }
+@keyframes breathe { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-1px); } }
+@keyframes float { 0%, 100% { transform: translateY(-1px); } 50% { transform: translateY(-4px); } }
+@keyframes pulse { from { opacity: .3; } to { opacity: 1; } }
+@keyframes drift { 0% { opacity: 0; transform: translate(0, 5px) scale(.6); } 18% { opacity: .9; } 100% { opacity: 0; transform: translate(var(--dx), -54px) rotate(var(--turn)) scale(.85); } }
+@media (prefers-reduced-motion: reduce) { .pet.idling, .pet.gliding { animation: none; } }

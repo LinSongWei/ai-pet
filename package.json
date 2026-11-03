@@ -1,0 +1,46 @@
+{
+  "name": "ronova-ai-desktop-pet",
+  "version": "1.0.2",
+  "description": "若娜瓦专属AI桌宠：余烬之间，威严与一点点反差",
+  "main": "src/main.js",
+  "author": "Personal Desktop Pet",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "test": "node scripts/test-ai-client.js && node scripts/test-animation-clock.js && node scripts/test-drag-ipc.js && node scripts/test-speech.js && node scripts/test-window-geometry.js",
+    "dist": "node scripts/build.js",
+    "pack": "node scripts/build.js --dir"
+  },
+  "devDependencies": { "electron": "37.10.3", "electron-builder": "26.15.3" },
+  "allowScripts": {
+    "electron@37.10.3": true,
+    "electron-winstaller@5.4.0": true
+  },
+  "build": {
+    "appId": "com.personal.ronova.ai.pet",
+    "productName": "若娜瓦AI桌宠",
+    "electronDist": "node_modules/electron/dist",
+    "asar": true,
+    "directories": { "output": "dist" },
+    "files": ["src/**/*", "assets/**/*", "package.json"],
+    "win": {
+      "icon": "assets/app-icon.ico",
+      "target": [{ "target": "nsis", "arch": ["x64"] }],
+      "artifactName": "Ronova-AI-Desktop-Pet-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "若娜瓦AI桌宠",
+      "installerIcon": "assets/app-icon.ico",
+      "uninstallerIcon": "assets/app-icon.ico",
+      "installerHeaderIcon": "assets/app-icon.ico",
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

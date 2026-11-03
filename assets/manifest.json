@@ -1,0 +1,20 @@
+{
+  "cellWidth": 288,
+  "cellHeight": 256,
+  "columns": 8,
+  "rows": 10,
+  "frameCount": 80,
+  "spriteSheet": "spritesheet.png",
+  "rowNames": [
+    "presence",
+    "motionRight",
+    "motionLeft",
+    "duties",
+    "contrast",
+    "tea",
+    "cookie",
+    "hug",
+    "feather",
+    "ledger"
+  ]
+}

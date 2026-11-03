@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'">
+  <title>若娜瓦 · 余烬之间</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="topline"><span class="eyebrow"><i></i> RONOVA · PRIVATE AUDIENCE</span><button id="settingsBtn" class="icon-button" type="button" aria-label="打开连接与陪伴设置" title="连接与陪伴设置">⚙</button></div>
+    <div class="identity">
+      <div class="portrait-ring"><img src="../assets/avatar.png" alt="Q版若娜瓦" class="portrait"></div>
+      <div><div class="name-line"><h1>若娜瓦</h1><span>死之执政</span></div><p class="subtitle">余烬之间 <b>·</b> 今夜，允许片刻停留</p><p id="connectionStatus" class="connection"><i></i><span>桌面陪伴中</span></p></div>
+    </div>
+    <div class="header-line"><span>THE STILLNESS AFTER THE FLAME</span><i>✦</i></div>
+  </header>
+
+  <main id="messages" aria-label="对话记录" aria-live="polite" aria-relevant="additions">
+    <div class="date-separator"><span>此刻 · 余烬未息</span></div>
+    <article class="message assistant welcome"><span class="speaker">RONOVA <i>✦</i></span><p>不必拘谨。既然在这里，你的话，我会听。</p><small>……但桌边的那份点心，暂归我保管。</small></article>
+  </main>
+
+  <section class="composer-area" aria-label="发送消息">
+    <div class="quick-actions"><button data-prompt="我工作有点累了，陪我歇一会。" data-emotion="hug" type="button"><span>✦</span> 陪我片刻</button><button data-prompt="给你一份小点心，你会怎么反应？" data-emotion="cookie" type="button"><span>◈</span> 递个点心</button><button data-prompt="可以轻轻摸一下你的头吗？" data-emotion="blush" type="button"><span>♡</span> 轻轻摸头</button><button data-prompt="你在记什么？让我也看看吧。" data-emotion="ledger" type="button"><span>▤</span> 偷看账册</button></div>
+    <form id="composer"><label class="sr-only" for="input">写给若娜瓦的话</label><textarea id="input" rows="2" maxlength="8000" placeholder="有话，便说给我听。" spellcheck="false"></textarea><div class="composer-bottom"><span id="inputHint">Enter 发送 <b>·</b> Shift + Enter 换行</span><button id="stopBtn" class="stop-button hidden" type="button">■ 停止</button><button id="sendBtn" class="send-button" type="submit">送达 <span>↗</span></button></div></form>
+    <footer><span>微小的休憩，也有它存在的分量。</span><i>✦</i></footer>
+  </section>
+
+  <section id="settings" class="settings-overlay hidden" aria-label="连接与陪伴设置" aria-modal="true" role="dialog">
+    <div class="settings-card"><div class="settings-header"><div><span class="eyebrow">A QUIET AGREEMENT</span><h2>连接与陪伴</h2></div><button id="cancelSettings" class="icon-button" type="button" aria-label="关闭设置">×</button></div>
+      <div class="settings-content">
+        <p class="settings-note">接好这条细线，她便能与你交谈。密钥仅保存在这台电脑。</p>
+        <label class="field"><span>DeepSeek API Key</span><div class="key-input"><input id="apiKey" type="password" autocomplete="off" placeholder="填写你的 API Key"><button id="toggleKey" type="button" aria-label="显示或隐藏密钥">显示</button></div></label>
+        <label class="field"><span>接口地址</span><input id="baseUrl" type="url" value="https://api.deepseek.com" spellcheck="false"></label>
+        <label class="field"><span>模型</span><input id="model" value="deepseek-v4-flash" spellcheck="false"></label>
+        <label class="field"><span>如何称呼你</span><input id="userName" maxlength="30" value="旅行者"></label>
+        <div class="toggle-row"><div><strong>偶尔自言自语</strong><small>你忙的时候，听她轻声念叨几句</small></div><label class="switch"><input id="autoTalk" type="checkbox" checked><span></span></label></div>
+        <div class="field-pair"><label class="field"><span>自言自语间隔</span><div class="unit-input"><input id="autoTalkMinutes" type="number" min="1" max="120" value="5"><span>分钟</span></div></label><label class="field"><span>桌面活跃程度</span><select id="liveliness"><option value="quiet">安静守候</option><option value="balanced" selected>恰到好处</option><option value="lively">偶尔调皮</option></select></label></div>
+        <div class="toggle-row"><div><strong>开机时相见</strong><small>登录 Windows 后自动启动桌宠</small></div><label class="switch"><input id="launchAtLogin" type="checkbox"><span></span></label></div>
+        <p id="settingsError" class="settings-error hidden" role="alert"></p>
+      </div>
+      <div class="settings-actions"><button id="saveSettings" type="button" class="save-button">约定生效 <span>✦</span></button></div>
+    </div>
+  </section>
+  <script src="chat.js"></script>
+</body>
+</html>

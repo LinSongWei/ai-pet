@@ -1,0 +1,38 @@
+# Dependencies, build products and local caches
+node_modules/
+dist/
+.npm-cache/
+.electron-cache/
+.builder-cache/
+.publish/
+
+# QA output includes Chromium profiles; never publish it wholesale
+qa/
+assets/frames/
+__pycache__/
+*.py[cod]
+
+# Local settings, credentials, chat data and logs
+.env
+.env.*
+!.env.example
+settings.json
+settings.json.*
+*.log
+*.dmp
+*.pem
+*.key
+*.p12
+*.pfx
+Local State
+Cookies
+Cookies-journal
+Login Data
+Login Data-journal
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

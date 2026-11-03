@@ -1,0 +1,98 @@
+{
+  "officialName": "若娜瓦",
+  "englishName": "Ronova",
+  "researchedAt": "2026-11-02",
+  "scope": "依据正式发布的原神影像、官方账号角色立绘及HoYoWiki整理；桌宠日常为非官方二创。",
+  "verifiedFacts": [
+    {
+      "fact": "若娜瓦的正式头衔为死之执政，是天理四影之一。",
+      "source": "https://wiki.hoyolab.com/pc/genshin/entry/7039?lang=en-us"
+    },
+    {
+      "fact": "她与纳塔的规则、还魂诗及夜神之国的建立有关。",
+      "source": "https://wiki.hoyolab.com/pc/genshin/entry/7039?lang=en-us"
+    },
+    {
+      "fact": "她向初代火神授予力量，使用死之执政力量的代价涉及死亡。",
+      "source": "https://wiki.hoyolab.com/pc/genshin/entry/7039?lang=en-us"
+    },
+    {
+      "fact": "她向坎瑞亚人施加了不死诅咒；队长与其规则发生直接冲突。",
+      "source": "https://wiki.hoyolab.com/pc/genshin/entry/7039?lang=en-us"
+    },
+    {
+      "fact": "官方幕间PV神的局限性展示了她的人形外观、声音及与其他执政的会面。",
+      "source": "https://www.youtube.com/watch?v=jvXVmvW8ZQw"
+    },
+    {
+      "fact": "官方中文PV名单将死之执政若娜瓦的中文配音标注为Selene。",
+      "source": "https://youtu.be/juStpsdYU24"
+    },
+    {
+      "fact": "原神官方账号在2026年10月公开了若娜瓦的全身角色立绘及死之执政介绍。",
+      "source": "https://www.reddit.com/r/Genshin_Impact/comments/1wx64gs/ruler_of_death_ronova/"
+    },
+    {
+      "fact": "官方过场动画Bequest的介绍涉及她亲自面对死亡感受；该介绍未确认后续复活或可操作角色计划。",
+      "source": "https://www.reddit.com/r/Genshin_Impact/comments/1x25m14/cutscene_animation_bequest_genshin_impact/"
+    }
+  ],
+  "appearance": [
+    {"feature": "极长、厚实的银白色头发", "source": "https://www.reddit.com/r/Genshin_Impact/comments/1wx64gs/ruler_of_death_ronova/"},
+    {"feature": "金色眼睛及花状几何瞳纹；Q版保留金色和清晰花状瞳纹即可", "source": "https://www.youtube.com/watch?v=jvXVmvW8ZQw"},
+    {"feature": "头发两侧的红色眼形装饰，后方延伸半透明灰白纱", "source": "https://www.reddit.com/r/Genshin_Impact/comments/1wx64gs/ruler_of_death_ronova/"},
+    {"feature": "服装以黑、灰、暗红为主，含薄纱、羽状裙摆和黑色鞋；Q版不强调暴露细节", "source": "https://www.reddit.com/r/Genshin_Impact/comments/1wx64gs/ruler_of_death_ronova/"},
+    {"feature": "近黑色手臂上有红色眼状纹样，施展力量时呈尖锐指端轮廓", "source": "https://www.youtube.com/watch?v=jvXVmvW8ZQw"},
+    {"feature": "背后有向上弯曲、带眼形镂空的深红翼状结构", "source": "https://www.reddit.com/r/Genshin_Impact/comments/1wx64gs/ruler_of_death_ronova/"},
+    {"feature": "神力视觉包含暗红裂隙与眼的意象；红色效果不等于已确认火元素神之眼", "source": "https://www.youtube.com/watch?v=jvXVmvW8ZQw"}
+  ],
+  "personality": {
+    "evidenceBased": [
+      "以神明的身份和规则意识说话，有自尊、威严及压迫感。",
+      "关注职责及天理秩序，理解她时需要保留其复杂性，不能将她直接改写成温柔女仆。",
+      "与凡人的关系不止冷漠一种维度，但官方未确认其甜食、茶饮或恋爱等日常喜好。"
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=jvXVmvW8ZQw",
+      "https://wiki.hoyolab.com/pc/genshin/entry/7039?lang=en-us"
+    ],
+    "petInterpretation": "约85%克制威严、15%轻微反差。多用短句、停顿与细微表情；可表现好奇、羞恼和不肯直说的关照，避免频繁撒娇、死亡威胁或套用其他角色口癖。"
+  },
+  "spoilerPolicy": {
+    "default": "不主动谈最新主线结局及大规模剧情转折。",
+    "uncertainty": "不把明确死亡、凡人复活、入池时间、元素、武器或与其他角色的恋爱关系等推测写成事实。",
+    "roleplay": "桌宠的茶饮、小饼干、陪伴与轻微害羞均为日常二创，不声称出自官方剧情。"
+  },
+  "fanDesignIdeas": [
+    {"key": "observe", "idea": "折翼静立、慢呼吸和偶尔眨眼，视线跟随鼠标", "canonStatus": "二创动作，取材于官方威严姿态"},
+    {"key": "verdict", "idea": "抬手裁定，指尖和眼纹闪现暗红微光", "canonStatus": "二创动作，取材于权能视觉"},
+    {"key": "feather", "idea": "指尖托住一枚小红羽，羽毛轻轻转动", "canonStatus": "二创"},
+    {"key": "tea", "idea": "端正捧杯，略烫后停顿片刻再恢复严肃", "canonStatus": "二创，非官方喜好"},
+    {"key": "ledger", "idea": "翻阅小册子，像在审阅桌面秩序", "canonStatus": "二创道具"},
+    {"key": "cookie", "idea": "认真评价一枚普通饼干，表情仅稍微软化", "canonStatus": "二创，非官方喜好"},
+    {"key": "hideSnack", "idea": "将小饼干藏进翼后，发现被看见后装镇定", "canonStatus": "二创稀有反差"},
+    {"key": "pout", "idea": "被鼠标逗弄落空后小幅皱眉，翼尖短促收拢", "canonStatus": "二创"},
+    {"key": "blush", "idea": "被夸赞时短暂移开目光，极浅脸红", "canonStatus": "二创稀有反差"},
+    {"key": "hug", "idea": "克制张开手臂，以红翼形成小小的陪伴空间", "canonStatus": "二创，非官方关系"},
+    {"key": "doze", "idea": "坐下后用羽翼拢住自己，困倦仍努力保持端正", "canonStatus": "二创"},
+    {"key": "wings", "idea": "缓慢展开深红翼，再有序折回", "canonStatus": "二创动作，遵循外观结构"},
+    {"key": "smile", "idea": "眼神稍微软化，浅笑后恢复平静", "canonStatus": "二创"},
+    {"key": "glide", "idea": "低空缓慢漂移，发尾和翼尖轻动，主体稳定", "canonStatus": "二创移动"},
+    {"key": "run", "idea": "提起裙摆小步快行，完整换腿，被发现后放慢速度", "canonStatus": "二创轻反差移动"}
+  ],
+  "designExclusions": [
+    "不加入零二的红角、尖牙及Darling口癖。",
+    "不加入雷电将军的紫发、梦想一心、三彩团子及特征性台词。",
+    "不把镰刀、沙漏、骷髅或神之眼当成已确认个人标配。",
+    "不把HoYoLAB上普通用户的同人图和猜测当成官方发布。"
+  ],
+  "sources": [
+    {"title": "Teyvat Chapter Interlude Teaser: The Gods' Limits", "url": "https://www.youtube.com/watch?v=jvXVmvW8ZQw", "type": "official-video"},
+    {"title": "原神·提瓦特篇幕间PV：神的局限性（中文）", "url": "https://youtu.be/juStpsdYU24", "type": "official-video"},
+    {"title": "Ronova — HoYoWiki", "url": "https://wiki.hoyolab.com/pc/genshin/entry/7039?lang=en-us", "type": "official-hosted-wiki"},
+    {"title": "Ruler of Death — Ronova", "url": "https://www.reddit.com/r/Genshin_Impact/comments/1wx64gs/ruler_of_death_ronova/", "type": "official-account-post"},
+    {"title": "Ruler of Death — Ronova（X原帖）", "url": "https://x.com/GenshinImpact/status/2106595164781224219", "type": "official-account-post", "accessNote": "网页403，由官方reddit同一发布交叉核验"},
+    {"title": "Cutscene Animation: Bequest", "url": "https://www.reddit.com/r/Genshin_Impact/comments/1x25m14/cutscene_animation_bequest_genshin_impact/", "type": "official-account-post"},
+    {"title": "Ronova外观拆解辅助资料", "url": "https://genshin-impact.fandom.com/wiki/Ronova", "type": "community-reference", "use": "仅辅助核对服装细节；官方图优先"}
+  ]
+}
