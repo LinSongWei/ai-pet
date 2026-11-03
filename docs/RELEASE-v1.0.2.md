@@ -25,3 +25,7 @@ SHA256: E618FA8FBABFBF79EBC11D386AFC341D5AA5CDA80745CE4EBA6B8B81931E6F92
 ```
 
 安装包未数字签名，请核实下载来源及校验值；不要关闭系统安全防护。角色相关权利归其权利人，项目非官方。
+
+## 安全维护提示
+
+本版保留 Electron 37.10.3。当前依赖审计存在已知告警，Electron 运行时也会随安装包分发，尚未完成逐项影响分析与升级验证。请在下载前阅读 [安全说明](https://github.com/LinSongWei/ai-pet/blob/main/SECURITY.md)，不要用本程序处理敏感资料。
